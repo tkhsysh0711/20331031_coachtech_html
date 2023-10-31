@@ -11,18 +11,18 @@
     <h1>株式会社TECH</h1>
     <ul>
         <li><a href="html-test.html">ホーム</a></li>
-        <li><a>企業情報</a></li>
-        <li><a>会社概要</a></li>
-        <li><a>よくある質問</a></li>
-        <li><a>お問い合わせ</a></li>
+        <li><a href="Co.Info">企業情報</a></li><!--未実装-->
+        <li><a href="#Co.Overview">会社概要</a></li>
+        <li><a href="Question">よくある質問</a></li><!--未実装-->
+        <li><a href="#Inquiry">お問い合わせ</a></li>
     </ul>
 
     <div>
-        <img src="img/mv.png/mv.png" alt="No Image">
-        <p>最新のテクノロジーで社会課題を解決</p>
+        <img src="img/mv.png/mv.png" alt="">
+        <p>最新のテクノロジーで<em>社会課題</em>を解決</p>
     </div>
 
-    <h2>会社概要</h2>
+    <h2 id="Co.Overview">会社概要</h2>
     <table>
         <tr>
             <th>会社名</th>
@@ -49,6 +49,16 @@
             <td>1000万円</td>
         </tr>
     </table>
+
+    <h2 id="Inquiry">お問い合わせ</h2>
+    <form action="recipient" method="post"><!--送信先未実装-->
+        <p>会社名<input type="text" /></p>
+        <p>お名前<input type="text" /></p>
+        <p>メールアドレス<input type="email" /></p>
+        <p>お問い合わせ内容<textarea name="textarea" cols="35" rows="6"></textarea></p>
+        <input type="submit" value="お申し込み" />
+    </form>
+    <small>©2020 TECH inc.</small>
 </body>
 
 </html>
